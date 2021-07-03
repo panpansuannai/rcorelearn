@@ -7,5 +7,4 @@
 ## 2021-7-3
 - 学习rust声明宏语法[声明宏总结](https://codechina.csdn.net/DPYOG/rcorelearn/rust-lang/macro.md)
 - 完成rustlings全部练习(之前已经完成一部分) [rustlings/exercises](https://codechina.csdn.net/DPYOG/rcorelearn/rust-lang/exercises)
-- 获取rCore-Tutorial源代码并尝试运行,rustsbi报错,暂时未知原因
-![rustsbi错误信息](https://codechina.csdn.net/DPYOG/rcorelearn/res/rustsbierror.png)
+- 获取rCore-Tutorial源代码并尝试运行,rustsbi报错,暂时未知原因 [rustsbi错误信息](https://codechina.csdn.net/DPYOG/rcorelearn/res/rustsbierror.png)
