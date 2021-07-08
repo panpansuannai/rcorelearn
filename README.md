@@ -21,3 +21,5 @@
 ## 2021-7-7
 - 学习"Rust by Example"中的[泛型](https://codechina.csdn.net/DPYOG/rcorelearn/rust-lang/trait.md), [闭包](https://codechina.csdn.net/DPYOG/rcorelearn/rust-lang/closures.md), [类型转换](https://codechina.csdn.net/DPYOG/rcorelearn/rust-lang/convertion.md)
 
+## 2021-7-8
+- 学习rust生命周期、trait object等内容

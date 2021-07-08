@@ -182,3 +182,46 @@ match msg {
     },
 }
 ```
+
+## 使用Enum实现一个链表
+```rust
+enum List {
+    Cons(i32, Box<List>),
+    Nil,
+}
+impl List {
+    fn new() -> List {
+        List::Nil
+    }
+
+    /// Append an element to the tail of the List
+    fn append(&mut self, val : i32) {
+        let mut cur : &mut Self = self; 
+        while let List::Cons(_, c) = cur {
+            cur = c;
+        }
+        match cur {
+            List::Cons(_, v ) => {
+                *v = Box::new(List::Cons(val, Box::new(List::Nil) ));
+            },
+            _ => {
+                *cur = List::Cons(val, Box::new(List::Nil) );
+            }
+        }
+    }
+
+    /// Get the len of the List
+    fn len(&self) -> u32 {
+        let mut len = 0;
+        let mut head = self;
+        while let List::Cons(_, n) = head{
+            len += 1;
+            if let List::Nil = **n {
+                break;
+            }
+            head = n;
+        }
+        len
+    }
+}
+```
